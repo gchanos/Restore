@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const getInitialDarkMode = () => {
     const storedDarkMode = localStorage.getItem('darkMode')
     return storedDarkMode ? JSON.parse(storedDarkMode) : true
-  }
+}
 
 export const uiSlice = createSlice({
     name: 'ui',

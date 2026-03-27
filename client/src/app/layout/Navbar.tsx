@@ -34,7 +34,7 @@ const navStyles = {
     color: 'grey.500',
   },
   '&.active': {
-    color: '#BAECF9',
+    color: 'primary.main',
   },
 };
 
@@ -71,7 +71,7 @@ export default function NavBar() {
           <List sx={{ display: 'flex', gap: 8 }}>
             {midLinks.map(({ title, path }) => (
               <ListItem component={NavLink} to={path} key={path} sx={navStyles}>
-                {title.toUpperCase()}
+                {title}
               </ListItem>
             ))}
           </List>
@@ -86,7 +86,7 @@ export default function NavBar() {
           <List sx={{ display: 'flex' }}>
             {rightLinks.map(({ title, path }) => (
               <ListItem component={NavLink} to={path} key={path} sx={navStyles}>
-                {title.toUpperCase()}
+                {title}
               </ListItem>
             ))}
           </List>

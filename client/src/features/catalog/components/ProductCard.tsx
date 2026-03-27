@@ -21,10 +21,8 @@ export default function ProductCard({ product }: Props) {
 
   return (
     <Card
-      elevation={3}
       sx={{
         width: 280,
-        borderRadius: 2,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
@@ -43,7 +41,7 @@ export default function ProductCard({ product }: Props) {
           gutterBottom
           variant="subtitle2"
           sx={{
-            textTransform: 'uppercase',
+            textTransform: 'capitalize',
           }}
         >
           {product.name}
